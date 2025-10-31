@@ -1,0 +1,35 @@
+body { font-family: 'Arial', sans-serif; margin: 20px; background-color: #f8f9fa; color: #333; }
+.container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+h1, h2 { color: #007bff; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+.controls, .progression-container, .analysis-section { margin-bottom: 20px; padding: 15px; border: 1px solid #dee2e6; border-radius: 6px; background-color: #f1f1f1; }
+.controls div { margin-bottom: 10px; }
+label { font-weight: bold; margin-right: 10px; }
+button, select, input[type="range"], input[type="number"] { padding: 8px 12px; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; }
+
+/* Button Styles */
+button { background-color: #007bff; color: white; border: none; transition: background-color 0.3s; }
+button:hover:not(:disabled) { background-color: #0056b3; }
+button:disabled { background-color: #6c757d; cursor: not-allowed; }
+
+/* Progression Display Styles */
+.progression-container { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px; background-color: #fff; border-color: #007bff; }
+.chord-unit { flex-basis: 20%; min-width: 150px; text-align: center; padding: 10px; border: 1px solid #ccc; border-radius: 4px; background-color: #e9ecef; }
+.chord-unit .numeral { font-size: 1.5em; font-weight: bold; display: block; color: #dc3545; }
+.chord-unit .function { font-size: 0.8em; display: block; color: #6c757d; }
+.chord-unit .symbol { font-size: 1.2em; font-weight: bold; display: block; margin: 5px 0; color: #28a745; }
+.chord-unit .notes { font-size: 0.9em; display: block; color: #333; }
+.suggestions-box { padding: 20px; background-color: #e2f0ff; border-radius: 8px; }
+.progression-title { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.progression-title p { font-size: 1.1em; font-weight: bold; margin: 0; }
+.play-specific-btn { background-color: #28a745; }
+.play-specific-btn:hover { background-color: #1e7e34; }
+
+/* Analysis Section Styles */
+.analysis-section { margin-top: 30px; background-color: #fff; border: 2px solid #28a745; }
+.analysis-section h3 { color: #dc3545; margin-top: 10px; }
+.analysis-section ul { list-style: disc; margin-left: 20px; }
+.analysis-section li { margin-bottom: 5px; }
+
+/* Status Indicators */
+#audioStatus { margin-top: 15px; font-weight: bold; }
+#recordStatus { margin-top: 15px; font-weight: bold; color: #dc3545; }
